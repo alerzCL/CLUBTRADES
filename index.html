@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Precios - Habbo Origins Fan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #00695c;
+        }
+        h2 {
+            color: #004d40;
+            margin: 20px 0 10px;
+        }
+        .catalog {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .item {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .item h3 {
+            font-size: 14px;
+            margin: 5px 0;
+            color: #333;
+        }
+        .item p {
+            font-size: 12px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .item .price {
+            color: #d32f2f;
+            font-weight: bold;
+        }
+        .disclaimer {
+            font-size: 12px;
+            color: #666;
+            margin-top: 20px;
+        }
+        .sort-button {
+            background-color: #00695c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Catálogo de Precios - Habbo Origins Fan</h1>
+    <button class="sort-button" onclick="sortByPriceDesc()">Ordenar por Precio (Descendente)</button>
+    <!-- Categoría 1: Tronos -->
+    <h2>Tronos</h2>
+    <div class="catalog" id="category-1">
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Trono Clásico">
+            <h3>Trono Clásico</h3>
+            <p>Un trono icónico para reyes.</p>
+            <p class="price">200 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Trono de Fuego">
+            <h3>Trono de Fuego</h3>
+            <p>Poder ardiente para tu hotel.</p>
+            <p class="price">210 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Trono Esmeralda">
+            <h3>Trono Esmeralda</h3>
+            <p>Elegancia verde brillante.</p>
+            <p class="price">190 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Trono de Hielo">
+            <h3>Trono de Hielo</h3>
+            <p>Frescor invernal único.</p>
+            <p class="price">180 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Trono de Rubí">
+            <h3>Trono de Rubí</h3>
+            <p>Brillo rojo intenso.</p>
+            <p class="price">230 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Trono de Oro">
+            <h3>Trono de Oro</h3>
+            <p>Lujo supremo para tu sala.</p>
+            <p class="price">250 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Trono de Diamante">
+            <h3>Trono de Diamante</h3>
+            <p>Brillo en cada rincón.</p>
+            <p class="price">240 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Trono de Plata">
+            <h3>Trono de Plata</h3>
+            <p>Elegancia sobria y moderna.</p>
+            <p class="price">170 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Trono Gótico">
+            <h3>Trono Gótico</h3>
+            <p>Estilo medieval épico.</p>
+            <p class="price">160 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Trono Místico">
+            <h3>Trono Místico</h3>
+            <p>Magia en cada asiento.</p>
+            <p class="price">220 créditos</p>
+        </div>
+    </div>
+    <!-- Categoría 2: Lámparas -->
+    <h2>Lámparas</h2>
+    <div class="catalog" id="category-2">
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Lámpara Dragón">
+            <h3>Lámpara Dragón</h3>
+            <p>Ilumina con un toque mítico.</p>
+            <p class="price">75 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Lámpara de Lava">
+            <h3>Lámpara de Lava</h3>
+            <p>Vibras retro psicodélicas.</p>
+            <p class="price">30 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Lámpara de Cristal">
+            <h3>Lámpara de Cristal</h3>
+            <p>Brillo elegante para tu sala.</p>
+            <p class="price">80 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Lámpara de Neón">
+            <h3>Lámpara de Neón</h3>
+            <p>Vibras modernas y brillantes.</p>
+            <p class="price">35 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Lámpara de Fuego">
+            <h3>Lámpara de Fuego</h3>
+            <p>Calor visual para tu hotel.</p>
+            <p class="price">85 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Lámpara Estelar">
+            <h3>Lámpara Estelar</h3>
+            <p>Ilumina como el cielo nocturno.</p>
+            <p class="price">70 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Lámpara de Hielo">
+            <h3>Lámpara de Hielo</h3>
+            <p>Frescor luminoso.</p>
+            <p class="price">65 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Lámpara Gótica">
+            <h3>Lámpara Gótica</h3>
+            <p>Estilo medieval iluminado.</p>
+            <p class="price">60 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Lámpara de Rubí">
+            <h3>Lámpara de Rubí</h3>
+            <p>Brillo rojo intenso.</p>
+            <p class="price">90 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Lámpara de Oro">
+            <h3>Lámpara de Oro</h3>
+            <p>Lujo en cada rincón.</p>
+            <p class="price">100 créditos</p>
+        </div>
+    </div>
+    <!-- Categoría 3: Sofás -->
+    <h2>Sofás</h2>
+    <div class="catalog" id="category-3">
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Sofá Retro">
+            <h3>Sofá Retro</h3>
+            <p>Estilo vintage para tu sala.</p>
+            <p class="price">50 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Sofá de Diamante">
+            <h3>Sofá de Diamante</h3>
+            <p>Brillo en cada rincón.</p>
+            <p class="price">220 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Sofá de Terciopelo">
+            <h3>Sofá de Terciopelo</h3>
+            <p>Comodidad con clase.</p>
+            <p class="price">100 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Sofá de Oro">
+            <h3>Sofá de Oro</h3>
+            <p>Lujo supremo para tu sala.</p>
+            <p class="price">240 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Sofá de Plata">
+            <h3>Sofá de Plata</h3>
+            <p>Elegancia moderna.</p>
+            <p class="price">110 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Sofá Gótico">
+            <h3>Sofá Gótico</h3>
+            <p>Estilo medieval cómodo.</p>
+            <p class="price">80 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Sofá de Hielo">
+            <h3>Sofá de Hielo</h3>
+            <p>Frescor para tu sala.</p>
+            <p class="price">70 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Sofá de Fuego">
+            <h3>Sofá de Fuego</h3>
+            <p>Calor visual en tu hotel.</p>
+            <p class="price">90 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Sofá Estelar">
+            <h3>Sofá Estelar</h3>
+            <p>Comodidad cósmica.</p>
+            <p class="price">85 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Sofá de Rubí">
+            <h3>Sofá de Rubí</h3>
+            <p>Brillo rojo para tu sala.</p>
+            <p class="price">120 créditos</p>
+        </div>
+    </div>
+    <!-- Categoría 4: Estatuas -->
+    <h2>Estatuas</h2>
+    <div class="catalog" id="category-4">
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Estatua de León">
+            <h3>Estatua de León</h3>
+            <p>Majestuosidad para tu hotel.</p>
+            <p class="price">160 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Estatua de Águila">
+            <h3>Estatua de Águila</h3>
+            <p>Símbolo de libertad.</p>
+            <p class="price">170 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Estatua de Oro">
+            <h3>Estatua de Oro</h3>
+            <p>Un lujo para tu sala.</p>
+            <p class="price">250 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Estatua de Buda">
+            <h3>Estatua de Buda</h3>
+            <p>Paz y serenidad.</p>
+            <p class="price">150 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Estatua de Dragón">
+            <h3>Estatua de Dragón</h3>
+            <p>Poder mítico en tu hotel.</p>
+            <p class="price">180 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Estatua de Hielo">
+            <h3>Estatua de Hielo</h3>
+            <p>Frescor escultórico.</p>
+            <p class="price">140 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Estatua de Fuego">
+            <h3>Estatua de Fuego</h3>
+            <p>Calor visual imponente.</p>
+            <p class="price">160 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Estatua de Rubí">
+            <h3>Estatua de Rubí</h3>
+            <p>Brillo rojo majestuoso.</p>
+            <p class="price">170 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Estatua Gótica">
+            <h3>Estatua Gótica</h3>
+            <p>Estilo medieval imponente.</p>
+            <p class="price">130 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Estatua Estelar">
+            <h3>Estatua Estelar</h3>
+            <p>Brillo cósmico en tu sala.</p>
+            <p class="price">145 créditos</p>
+        </div>
+    </div>
+    <!-- Categoría 5: Máquinas -->
+    <h2>Máquinas</h2>
+    <div class="catalog" id="category-5">
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Máquina de Helados">
+            <h3>Máquina de Helados</h3>
+            <p>Refresca con estilo.</p>
+            <p class="price">120 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Máquina de Dulces">
+            <h3>Máquina de Dulces</h3>
+            <p>Golosinas para todos.</p>
+            <p class="price">40 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Máquina de Niebla">
+            <h3>Máquina de Niebla</h3>
+            <p>Ambiente misterioso.</p>
+            <p class="price">85 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Máquina de Fuego">
+            <h3>Máquina de Fuego</h3>
+            <p>Efectos ardientes para tu sala.</p>
+            <p class="price">90 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Máquina de Humo">
+            <h3>Máquina de Humo</h3>
+            <p>Ambiente de misterio.</p>
+            <p class="price">70 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Máquina de Burbujas">
+            <h3>Máquina de Burbujas</h3>
+            <p>Diversión efervescente.</p>
+            <p class="price">60 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Máquina de Confeti">
+            <h3>Máquina de Confeti</h3>
+            <p>Fiesta en cada rincón.</p>
+            <p class="price">80 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Máquina de Luces">
+            <h3>Máquina de Luces</h3>
+            <p>Iluminación dinámica.</p>
+            <p class="price">75 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Máquina de Sonido">
+            <h3>Máquina de Sonido</h3>
+            <p>Vibras musicales para tu sala.</p>
+            <p class="price">65 créditos</p>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Máquina de Chispas">
+            <h3>Máquina de Chispas</h3>
+            <p>Efectos brillantes.</p>
+            <p class="price">95 créditos</p>
+        </div>
+    </div>
+    <!-- Categorías 6 a 51 (Patrón para copiar y personalizar) -->
+    <!-- Ejemplo de Categoría 6: Mesas -->
+    <h2>Mesas</h2>
+    <div class="catalog" id="category-6">
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Mesa de Banquete">
+            <h3>Mesa de Banquete</h3>
+            <p>Para fiestas épicas.</p>
+            <p class="price">60 créditos</p>
+        </div>
+        <!-- Agrega 9 ítems más aquí con la misma estructura -->
+        <!-- Ejemplo: -->
+        <div class="item">
+            <img src="https://via.placeholder.com/100" alt="Mesa de Oro">
+            <h3>Mesa de Oro</h3>
+            <p>Lujo para tu comedor.</p>
+            <p class="price">150 créditos</p>
+        </div>
+        <!-- Repite hasta completar 10 ítems por categoría -->
+    </div>
+    <!-- Repite el bloque <h2> y <div class="catalog"> para las categorías 7 a 51 -->
+    <!-- Ejemplo de nombres de categorías: Sillas, Cortinas, Pósters, Árboles, Fuentes, Pianos, Cofres, Ventanas, Camas, Alfombras, etc. -->
+    <p class="disclaimer">Este es un sitio de fans no oficial de Habbo Hotel: Origins. Todos los precios son referenciales y no están afiliados con Sulake Oy.</p>
+    <script>
+        function sortByPriceDesc() {
+            const catalogs = document.querySelectorAll('.catalog');
+            catalogs.forEach(catalog => {
+                const items = Array.from(catalog.children);
+                items.sort((a, b) => {
+                    const priceA = parseFloat(a.querySelector('.price').textContent.match(/[\d.]+/)[0]);
+                    const priceB = parseFloat(b.querySelector('.price').textContent.match(/[\d.]+/)[0]);
+                    return priceB - priceA;
+                });
+                catalog.innerHTML = '';
+                items.forEach(item => catalog.appendChild(item));
+            });
+        }
+    </script>
+</body>
+</html>
